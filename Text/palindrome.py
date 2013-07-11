@@ -6,4 +6,9 @@ def main():
 		print "Yes, this can be reversed and look the same!"
 	else:
 		print "No, this string cannot be reversed and look the same."
-main()
+
+again = 'y'
+while again.lower() == 'y' or again.lower() == 'yes':
+	main()
+	print "Do you want to test another?"
+	again = raw_input("Y/N: ")
